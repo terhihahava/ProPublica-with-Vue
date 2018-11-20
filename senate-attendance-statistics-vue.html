@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<link rel="stylesheet" href="senate1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <header>
+        <div class="container-fluid">
+            <div>
+                <img class="logo" src="Seal_of_the_United_States_House_of_Representatives.svg" alt="logo">
+
+                <img class="email_icon" src="if_mail_1814108.svg" alt="email">
+                <p class="email_text">info@tgif.net</p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <br>
+
+
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">TGIF</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Congress 113
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="senate-data_4.html">Senate</a>
+                            <a class="dropdown-item" href="#">House of Representatives</a> </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Attendance
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="senate-attendance-statistics1.html">Senate</a>
+                            <a class="dropdown-item" href="#">House of Representatives</a> </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Party Loyalty
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="senate-party-loyalty-statistics.html">Senate</a>
+                            <a class="dropdown-item" href="#">House of Representatives</a> </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+
+        </nav>
+    </div>
+
+    <br>
+
+    <!--Table container-->
+    <div>
+        <h2>Attendance</h2>
+        <p>The Constitution specifies that a majority of members constitutes a quorum to do business in each house. Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in most cases, debates continue even if a majority is not present.</p>
+
+        <p>The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator stating "aye" or "no" when his or her name is announced. The House reserves roll-call votes for the most formal matters, as a roll-call of all 435 representatives takes quite some time; normally, members vote by electronic device. In the case of a tie, the motion in question fails. In the Senate, the Vice President may (if present) cast the tiebreaking vote.</p>
+        <br>
+
+        <h3>Senate at a glance</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Party</th>
+                    <th>Number of Reps</th>
+                    <th>% Voted with Party</th>
+                </tr>
+            </thead>
+            <tbody id="senate_at_a_glance">
+            </tbody>
+        </table>
+
+        <h3>Least Engaged (Bottom 10% Attendance)</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Number of Missed Votes</th>
+                    <th>% Missed</th>
+                </tr>
+            </thead>
+            <tbody id="bottom_attendance">
+
+            </tbody>
+        </table>
+
+        <h3>Most Engaged (Top 10% Attendance)</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Number of Missed Votes</th>
+                    <th>% Missed</th>
+                </tr>
+            </thead>
+            <tbody id="top_attendance">
+            </tbody>
+        </table>
+
+    </div>
+
+<!--    <script src="pro-congress-113-senate.js"> </script>-->
+
+    <script src="statistics.js"> </script>
+
+    <script src="consolidated_functions1.js"> </script>
+
+    <script src="create_senate_tables_from_functions.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

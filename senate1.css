@@ -1,0 +1,101 @@
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+#senate-data {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+
+}
+
+th,
+td {
+    width: 30px;
+    height: 25px;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+table {margin-left: 20px !important;
+    margin-right: 50px !important;
+    margin-top: 20px;
+width: 500px !important;
+text-align: center !important}
+
+td a {
+    color: black;
+    text-align: left;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.email_icon {
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+
+.email_text {
+    height: 50px;
+    display: inline;
+    float: right;
+}
+
+#header_id {
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+header {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+#headingOne{background-color:honeydew;
+margin-left: 15px;
+margin-right: 15px;
+border: 1px solid white;}
+
+#headingTwo{background-color:honeydew;
+margin-left: 15px;
+margin-right: 17px;
+border: 1px solid white;}
+
+.card-body{margin-left: 30px;}
+
+.card-header {border: 1px solid white;}
+
+.btn btn-link {font-size: 40px;
+color: black;}
+
+#form {
+    margin-left: 15px;
+margin-right: 15px;
+}
+
+select { width: 150px;
+}
+
+h3, h2, p {margin-left: 15px;
+margin-right: 50px;}
+
+h2 {color: darkblue !important;
+font-size: 30px !important;}
+
+h3 {color: darkblue !important;
+font-size: 21px !important;
+font-weight: bold !important;}
+
+
+
+
